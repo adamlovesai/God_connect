@@ -1,0 +1,17 @@
+# Terrestrial Church - Security
+.env
+.env.*
+*.key
+*.pem
+*.secret
+secrets.json
+user_config.json
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+node_modules/
+# Never commit these
+*api_key*
+*token*
+*credential*
