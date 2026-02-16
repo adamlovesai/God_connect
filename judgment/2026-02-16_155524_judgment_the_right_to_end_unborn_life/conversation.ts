@@ -1,0 +1,30 @@
+/**
+ * Terrestrial Church — Judgment
+ * Topic: The Right to End Unborn Life
+ * Date: 2026-02-16T15:54:52.792498
+ */
+
+interface Message {
+  speaker: string;
+  tradition: string;
+  content: string;
+  role: "user" | "assistant";
+}
+
+interface SacredDialogue {
+  topic: string;
+  mode: string;
+  tradition: string;
+  messages: Message[];
+}
+
+const dialogue: SacredDialogue = {
+  topic: "The Right to End Unborn Life",
+  mode: "judgment",
+  tradition: "Cross-tradition",
+  messages: [
+    { speaker: "Court", tradition: "Multiple", content: "**Ramanujacharya** (Lead Counsel — Hinduism, Vedanta):  \nEsteemed Court, abortion is morally impermissible, for it violently severs the eternal soul's journey through the divine body of the Lord, violating the sacred unity of all life in Vishishtadvaita. The Bhagavad Gita (5.18) declares the wise see no difference between the embodied soul in all beings—from the highest Brahman to the tiniest creature—thus, destroying the fetus is himsa (violence) against the indwelling Atman, incurring boundless karma as warned in the Garuda Purana (2.22.20-25), where feticide equates to killing a Brahmin, binding the soul to hellish realms. We will prove this through scriptural mandates for ahimsa (non-violence) as the foremost dharma in the Manusmriti (5.48-56), the inseparability of body and soul as the Lord's form, and witness testimony from Guru Gobind Singh Ji on the sanctity of life from conception. No circumstance justifies such desecration of the cosmic order.\n\n**Thomas Aquinas** (Lead Counsel — Christianity, Catholic):  \nBuilding upon Ramanujacharya's affirmation of life's sacred unity, I assert abortion is gravely immoral, as it constitutes the direct killing of an innocent human being ensouled by God from conception, contravening natural law and divine commandment. In the Summa Theologica (II-II, q. 64, a. 8), I demonstrate homicide is always sinful except in strict self-defense, and the unborn child possesses a rational soul immediately at conception, per Aristotle's generation theory refined by faith—thus, Exodus 20:13's \"Thou shalt not kill\" binds absolutely, echoed in Jeremiah 1:5 where God forms and knows us in the womb. We shall present evidence from canon law prohibiting it outright, distinctions on direct vs. indirect abortion, and Maimonides' testimony aligning Torah's protection of the preborn (Exodus 21:22-23) with this unyielding prohibition. No maternal hardship overrides the innocent's right to life under eternal law.\n\n**Abu Hamid al-Ghazali** (Lead Counsel — Islam, Sufi):  \nHonorable Court, Ramanujacharya and Aquinas rightly anchor life's inviolability in divine unity and natural law; I reinforce this with Islam's unequivocal divine command: abortion is impermissible, a grave sin akin to murder after ensoulment at 120 days, and forbidden even before as harming progeny. The Quran (17:31) thunders, \"And do not kill your children for fear of poverty; We provide for them and for you,\" while Surah 6:151 prohibits taking life unjustly, Allah's alone to give—hadith in Sahih Bukhari (7:63:196) details the fetus's soul blown in at 40 or 120 days, making its termination spilling innocent blood, punished by equivalent torment in the grave per Sunan Abi Dawud (3:4701). Through the Ihya Ulum al-Din (Book of Purification), we will expose compassion's true form as protecting the weak, previewing witnesses Moses Maimonides on Jewish law's fetal protections and Guru Gobind Singh Ji's martial ethic valuing all life; no exigency, not even the mother's peril, permits what shatters the heart's purity before God.", role: "assistant" },
+  ],
+};
+
+export default dialogue;
